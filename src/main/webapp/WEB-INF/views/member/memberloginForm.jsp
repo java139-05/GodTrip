@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>로그인 창</title>
+<title>로그인 폼</title>
 </head>
 <body>
 
