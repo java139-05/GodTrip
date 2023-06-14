@@ -63,5 +63,8 @@ public class MemberDTO {
 		return "MemberDTO [p_ID=" + p_ID + ", p_passwd=" + p_passwd + ", p_name=" + p_name + ", p_tel=" + p_tel
 				+ ", p_email=" + p_email + ", p_info=" + p_info + ", p_grade=" + p_grade + ", p_category=" + p_category
 				+ "]";
-	}	
+	}
+
+	
+	
 }

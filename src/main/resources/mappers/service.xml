@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="service">
+
+    <insert id="serviceInsert" parameterType="kr.co.godtrip.service.ServiceDTO">
+        INSERT INTO customerservice (cno, c_code, title, content, regdate)
+        VALUES (NEXTVAL('customer_seq'), #{c_code}, #{title}, #{content}, #{regdate})
+    </insert>
+
+    <select id="serviceList" resultType="kr.co.godtrip.service.ServiceDTO">
+        SELECT cno, c_code, title, content, regdate
+        FROM customerservice
+        ORDER BY cno
+    </select>
+    
+    <select id="serviceDetail" resultType="kr.co.godtrip.service.ServiceDTO">
+	    SELECT cno, c_code, title, content, regdate
+	    FROM customerservice
+	    WHERE cno = #{cno}
+	</select>
+	
+	<delete id="serviceDelete" parameterType="int">
+    	DELETE FROM customerservice WHERE cno = #{cno}
+	</delete>
+
+	<update id="serviceUpdate" parameterType="kr.co.godtrip.service.ServiceDTO">
+	    UPDATE customerservice
+	    SET c_code = #{c_code}, title = #{title}, content = #{content}, regdate = #{regdate}
+	    WHERE cno = #{cno}
+	</update>
+	
+	<select id="getTotalCount" resultType="int">
+    	SELECT COUNT(*) FROM customerservice
+	</select>
+
+
+</mapper>
+
