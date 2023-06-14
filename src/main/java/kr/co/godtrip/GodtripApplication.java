@@ -16,25 +16,26 @@ public class GodtripApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GodtripApplication.class, args);
-	}//main() end
+	}
 	
 	@Bean   //내부적으로 객체를 생성해라
-	//template에서 만든 정보를 데이터소스에 가져온다
-	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
-		SqlSessionFactoryBean bean=new SqlSessionFactoryBean();
-      
-		bean.setDataSource(dataSource);
-		Resource[] res=new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*.xml");
-  
-		bean.setMapperLocations(res);
-		return bean.getObject();
-		// springboot + mybatis 그대로 사용하면 된다
-	}//end
+	   //template에서 만든 정보를 데이터소스에 가져온다
+	   public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
+	      SqlSessionFactoryBean bean=new SqlSessionFactoryBean();
+	      
+	      bean.setDataSource(dataSource);
+	      Resource[] res=new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*.xml");
+	      
+	      bean.setMapperLocations(res);
+	      return bean.getObject();
+	      // spring boot +mybatis 그대로 사용하면 된다
+	   }
+	   ////////////////////////////////////////////////////////
 	   
-	//mapper에서 sql쿼리문을 가져오면 자동으로 변환시켜 준다
-	@Bean
-	public SqlSessionTemplate sqlSession(SqlSessionFactory factory) {
-		return new SqlSessionTemplate(factory);
-	}//end      
-	
-}//class end
+	   /////////mapper에서 sql 쿼리문을 가져오면 자동으로 변환시켜 준다
+	   @Bean
+	   public SqlSessionTemplate sqlSession(SqlSessionFactory factory) {
+	       return  new SqlSessionTemplate(factory);
+	   }      
+
+}

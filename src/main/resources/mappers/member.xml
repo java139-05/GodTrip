@@ -3,7 +3,7 @@
      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
      
 <mapper namespace="member">
-	<insert id="insert" parameterType="kr.co.godtrip.member.MemberDTO">
+	<insert id="Memberinsert" parameterType="kr.co.godtrip.member.MemberDTO">
 		insert into partner3(p_ID,p_passwd,p_name,p_tel,p_email,p_info,p_grade)
 		values (#{p_ID},#{p_passwd},#{p_name},#{p_tel},#{p_email},#{p_info},#{p_grade})
 	</insert>

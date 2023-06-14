@@ -94,118 +94,119 @@ footer p {
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light">
-	<div class="container">
-		<a class="navbar-brand" href="#home">God 지은여행</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-	    
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="../product/">내만패</a>
-	        	</li>
-	        	<li class="nav-item">
-	          		<a class="nav-link" href="#">여행추천</a>
-	        	</li>
-	        	<li class="nav-item">
-	          		<a class="nav-link" href="../attraction/attractionList">관광지소개</a>
-	        	</li>
-	        	<li class="nav-item">
-	          		<a class="nav-link" href="../review/reviewList">여행후기</a>
-	        	</li>
-	        	<li class="nav-item">
-	          		<a class="nav-link" href="../service/serviceList">고객센터</a>
-	        	</li>
-	        	<li class="nav-item">
-	          		<a class="nav-link" href="../member/memberList">마이페이지</a>
-	        	</li>
-	        	<li class="nav-item dropdown">
-	          		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">로그인</a>
-	          			<div class="dropdown-menu dropdown-menu-right">
-	            			<a class="dropdown-item" href="../partner/partnerlogin">판매자로그인</a>
-	            			<a class="dropdown-item" href="../member/memberlogin">회원로그인</a>
-	          			</div>
-	        	</li>
-			</ul>
-		</div>
-	</div>
+  <div class="container">
+    <a class="navbar-brand" href="#home">God 지은여행</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../product/">내만패</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">여행추천</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../attraction/attractionList">관광지소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../review/reviewList">여행후기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../service/serviceList">고객센터</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../member/memberList">마이페이지</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">로그인</a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="../partner/partnerlogin">판매자로그인</a>
+            <a class="dropdown-item" href="../member/memberlogin">회원로그인</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1400px">
-	<img class="w3-image" src="../images/london2.jpg" alt="London" width="1400" height="600">
-	<div class="w3-display-middle" style="width:65%">
-		<div class="w3-display-left w3-padding w3-hide-small" style="width:100%">
-		<div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large ">
-			<h1 class="w3-xlarge">나만의 여행패키지를 만들어보세요</h1>
-	      	<hr class="w3-opacity">
-	      	<p><button class="w3-button w3-block w3-green w3-round"  onclick="location.href='/memberForm'">바로가기</button></p>
-	    </div>
-	  	</div>
-	</div>
+<img class="w3-images" src="../images/london2.jpg" alt="London" width="1400" height="600">
+<div class="w3-display-middle" style="width:65%">
+  <div class="w3-display-left w3-padding w3-hide-small" style="width:100%">
+    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large ">
+      <h1 class="w3-xlarge">나만의 여행패키지를 만들어보세요</h1>
+      <hr class="w3-opacity">
+      <p><button class="w3-button w3-block w3-green w3-round"  onclick="location.href='/memberForm'">바로가기</button></p>
+    </div>
+  </div>
+</div>
+      
+  
 </header>
 
 <!-- area Section -->
 <section id="projects" class="w3-container w3-padding-32">
-	<div class="container">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">인기여행지</h3>
-			<div class="row">
-			<div class="col-lg-4 col-md-6 mb-4">
-			<div class="card">
-				<div class="card-header">강릉</div>
-				<a href="#">
-				<img src="../images/gangneung.png" alt="gangneung" class="card-img-top">
-         			</a>
-       		</div>
-     		</div>
-      		<div class="col-lg-4 col-md-6 mb-4">
-        	<div class="card">
-          		<div class="card-header">제주</div>
-          		<a href="#">
-            	<img src="../images/jeju.png" alt="jeju" class="card-img-top">
-          		</a>
-        	</div>
-      		</div>
-      		<div class="col-lg-4 col-md-6 mb-4">
-       		<div class="card">
-          		<div class="card-header">부산</div>
-          		<a href="#">
-           		<img src="../images/busan.png" alt="busan" class="card-img-top">
-          		</a>
-        	</div>
-      		</div>
-    		</div>
-	</div>
+  <div class="container">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">인기여행지</h3>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-header">강릉</div>
+          <a href="#">
+            <img src="../images/gangneung.png" alt="gangneung" class="card-img-top">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-header">제주</div>
+          <a href="#">
+            <img src="../images/jeju.png" alt="jeju" class="card-img-top">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-header">부산</div>
+          <a href="#">
+            <img src="../images/busan.png" alt="busan" class="card-img-top">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- reviews Section -->
 <section id="reviews" class="w3-container w3-padding-32">
-	<div class="container">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">여행후기</h3>
-		<div class="row">
-      	<div class="col-lg-4 col-md-6 mb-4">
-        	<div class="card">
-          	<a href="#">
+  <div class="container">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">여행후기</h3>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <a href="#">
             <img src="../images/review_gn.png" alt="House" class="card-img-top">
-          	</a>
-        	</div>
-      	</div>
-      	<div class="col-lg-4 col-md-6 mb-4">
-        	<div class="card">
-          	<a href="#">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <a href="#">
             <img src="../images/review_gj.png" alt="House" class="card-img-top">
-          	</a>
-        	</div>
-      	</div>
-      	<div class="col-lg-4 col-md-6 mb-4">
-        	<div class="card">
-          	<a href="#">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <a href="#">
             <img src="../images/review_hc.png" alt="House" class="card-img-top">
-          	</a>
-       		</div>
-      	</div>
-    	</div>
-	</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
@@ -219,7 +220,7 @@ footer p {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
 </footer>
 
 <script>
@@ -244,3 +245,4 @@ document.getElementsByClassName("tablink")[0].click();
 
 </body>
 </html>
+

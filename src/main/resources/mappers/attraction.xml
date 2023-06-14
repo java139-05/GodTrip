@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     
+<mapper namespace="attraction">
+
+	
+<insert id="attractioninsert" parameterType="java.util.Map">
+    INSERT INTO attraction (area_code, tour_name, keyword, content, filename, filesize)
+    VALUES (#{area_code}, #{tour_name}, #{keyword}, #{content}, #{filename}, #{filesize})
+</insert>
+
+
+	
+	<select id="attractionlist" resultType="java.util.Map">
+	select *
+	from attraction
+	</select>
+	
+	
+	<select id="detail" parameterType="String" resultType="kr.co.godtrip.attraction.AttractionDTO">
+	<!--select tour_name, regdate, view_count, filename, content -->
+	select *
+	from attraction
+	where tour_code=#{tour_code}
+	</select>
+	
+	
+	
+	<delete id="delete" parameterType="String">
+		DELETE FROM attraction
+        WHERE tour_code = #{tour_code}
+	</delete>
+	
+	
+	    
+    <update id="update" parameterType="java.util.Map">
+        UPDATE attraction
+        SET area_code=#{area_code}
+           ,tour_name=#{tour_name}
+           ,keyword=#{keyword}
+           ,content=#{content}
+           ,filename=#{filename}
+           ,filesize=#{filesize}           
+        WHERE tour_code=#{tour_code}
+    </update>
+	
+	
+	
+	
+	
+
+	
+</mapper>
